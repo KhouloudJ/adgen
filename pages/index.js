@@ -58,6 +58,7 @@ const Home = () => {
             />
             
           </div>
+          <br/>
 
           <div className="prompt-buttons">
             <a
