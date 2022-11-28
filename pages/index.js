@@ -44,10 +44,11 @@ const Home = () => {
           </div>
           <div className="header-subtitle">
             <h2>
-              Add your description and generate a bio for your Twitter page with no hassle on your end.
+              Add your description and generate a bio for your Twitter page with
+              no hassle on your end.
             </h2>
           </div>
-        
+
           <div className="prompt-container">
             <textarea
               className="prompt-box"
@@ -55,15 +56,33 @@ const Home = () => {
               value={userInput}
               onChange={onUserChangedText}
             />
-            ;
+            
           </div>
+
           <div className="prompt-buttons">
-            <a className="generate-button" onClick={callGenerateEndpoint}>
+            <a
+              className={
+                isGenerating ? "generate-button loading" : "generate-button"
+              }
+              onClick={callGenerateEndpoint}
+            >
               <div className="generate">
-                <p>Generate</p>
+                {isGenerating ? <span class="loader"></span> : <p>Generate</p>}
               </div>
             </a>
           </div>
+          {apiOutput && (
+            <div className="output">
+              <div className="output-header-container">
+                <div className="output-header">
+                  <h3>Output</h3>
+                </div>
+              </div>
+              <div className="output-content">
+                <p>{apiOutput}</p>
+              </div>
+            </div>
+          )}
         </div>
       </div>
       <div className="badge-container grow">
