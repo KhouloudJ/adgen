@@ -35,7 +35,12 @@ const Home = () => {
   };
 
   return (
-    <div className="root" style={{ backgroundImage: `url(${background})` }}>
+    <div className="root">
+      <Image
+      layout="fill"
+      className="object-center object-cover pointer-events-none"
+      src={background}
+    />
       <Head>
         <title>Adgen</title>
       </Head>
