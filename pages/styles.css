@@ -11,7 +11,8 @@ body {
     display: flex;
     place-content: center flex-start;
     align-items: center;
-    background-image: url("../assets/background.jpg");
+    background-image:url("../assets/background.jpg");
+    opacity: 2;
     flex-flow: column nowrap;
     gap: 10px;
     height: 100vh;
@@ -19,6 +20,7 @@ body {
     padding: 0px;
     position: relative;
     opacity: 2;
+    
 }
 
 .container {
