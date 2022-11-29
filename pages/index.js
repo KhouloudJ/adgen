@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import adgenLogo from "../assets/adgen_logo.jpg";
+import background from "../assets/background.jpg";
+
 import { useState } from "react";
 
 const Home = () => {
@@ -33,11 +35,11 @@ const Home = () => {
   };
 
   return (
-    <div className="root">
+    <div className="root" style={{ backgroundImage: `url(${background})` }}>
       <Head>
-        <title>GPT-3 Writer | buildspace</title>
+        <title>Adgen</title>
       </Head>
-      <div className="container">
+      <div className="container" >
         <div className="header">
           <div className="header-title">
             <h1>Bio generator</h1>
@@ -56,9 +58,8 @@ const Home = () => {
               value={userInput}
               onChange={onUserChangedText}
             />
-            
           </div>
-          <br/>
+          <br />
 
           <div className="prompt-buttons">
             <a
