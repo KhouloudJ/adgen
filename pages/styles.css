@@ -326,9 +326,9 @@ textarea {
 }
 
 .output-content p {
-    text-align: center;
+    text-align: justify;
     white-space: pre-line;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgb(255, 255, 255);
 }
 
 @media (min-width: 810px) and (max-width: 1199px) {
