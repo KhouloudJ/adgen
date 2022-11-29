@@ -113,7 +113,7 @@ body {
     letter-spacing: 0px;
     line-height: 1.6em;
     text-align: start;
-    color: rgba(255, 255, 255, 0.75);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     text-transform: none;
 }
@@ -177,7 +177,7 @@ textarea {
 .generate-button {
     place-content: flex-start;
     align-items: flex-start;
-    background-color: rgb(255, 79, 18);
+    background-color: rgb(141, 18, 255);
     border-radius: 100px;
     display: flex;
     flex: 0 0 auto;
@@ -239,7 +239,7 @@ textarea {
     font-weight: 700;
     letter-spacing: -0.5px;
     line-height: 1em;
-    color: #fff;
+    color: rgb(159, 154, 154);
     padding: 12px;
     text-decoration: none;
 }
